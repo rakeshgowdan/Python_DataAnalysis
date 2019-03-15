@@ -22,9 +22,9 @@ Mr. T
 
 sentence = 'Start a sentence and then bring it to an end'
 
-pattern = re.compile(r'\D')
+pattern = re.compile(r'end$')
 
-matches = pattern.finditer(text_to_search)
+matches = pattern.finditer(sentence)
 
 for match in matches:
     print(match)
